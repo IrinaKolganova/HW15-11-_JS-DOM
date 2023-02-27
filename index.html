@@ -5,14 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <h1>Корзина</h1>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <button>Использовать купон на 20%</button>
+    <h1 class="h1">Корзина</h1>
+    <div class="card">
+      <div class="card__info">
+        <img src="./img/jacket.jpg" alt="jacket" class="image" />
+        <div class="card__text">
+          <p>Куртка Hanna Puffer Jacket, MUSTANG</p>
+          <p>цвет: серый</p>
+          <p>размер: S</p>
+          <p>количество: 1</p>
+        </div>
+      </div>
+      <div class="card__price" id="price1">16999</div>
+    </div>
+    <div class="card">
+      <div class="card__info">
+        <img src="./img/dress.jpg" alt="dress" class="image" />
+        <div class="card__text">
+          <p>Платье макси длинное шифон, Rodionov</p>
+          <p>цвет: тёмный</p>
+          <p>размер: 44</p>
+          <p>количество: 1</p>
+        </div>
+      </div>
+      <div class="card__price" id="price2">5699</div>
+    </div>
+    <div class="card">
+      <div class="card__info">
+        <img src="./img/jeans.jpg" alt="jeans" class="image" />
+        <div class="card__text">
+          <p>Джинсы, LOVE REPUBLIC</p>
+          <p>цвет: голубой</p>
+          <p>размер: 38</p>
+          <p>количество: 1</p>
+        </div>
+      </div>
+      <div class="card__price" id="price3">5299</div>
+    </div>
+    <div class="card">
+      <div class="card__info">
+        <img src="./img/shoes.jpg" alt="shoes" class="image" />
+        <div class="card__text">
+          <p>
+            Челси женские натуральная кожа осенние ботинки на платформе,
+            J.MACABU
+          </p>
+          <p>цвет: чёрный</p>
+          <p>размер: 40</p>
+          <p>количество: 1</p>
+        </div>
+      </div>
+      <div class="card__price" id="price4">9999</div>
+    </div>
+    <input type="button" id="resultFinal" value="Использовать купон на 20%" onclick="showResult()"></input>
+    <div class="result">
+      <p>Итого:</p>
+      <p id="resultSum"></p>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
