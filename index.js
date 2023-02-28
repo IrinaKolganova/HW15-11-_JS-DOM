@@ -12,10 +12,13 @@ function sumAll(){let sum=+price11+ +price22+ +price33+ +price44;
     document.getElementById("resultSum").textContent = sum}
 sumAll();
 
+let resultFinal=document.getElementById("resultFinal");
 resultFinal.addEventListener('click', showResult, {once : true});
-function showResult() {let final = +document.getElementById("resultSum").value;
-let resultFinal=final*0.8;
-document.getElementById("resultFinal").textContent = resultFinal;  
+document.getElementById("resultSum").textContent = resultFinal;
+
+function showResult() {let final = resultFinal*0.8;
+//let resultFinal=final*0.8;
+  
 //final.addEventListener(`sumAll*0.8`, showResult);
 }
 //showResult();
